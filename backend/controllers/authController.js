@@ -14,16 +14,16 @@ const signup = async (req, res, next) => {
       throw new Error('Please complete the reCAPTCHA verification');
     }
 
-    const secretKey = '6Le78w8tAAAAAM7Z7zAjQTOCjUiPBtdo2do6lSsc'; // Hardcoded to bypass Render env issues
-    const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captchaToken}`;
-    
-    const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
-    const verifyData = await verifyResponse.json();
-
-    if (!verifyData.success) {
-      res.status(400);
-      throw new Error('reCAPTCHA verification failed. Please try again.');
-    }
+    // const secretKey = '6Le78w8tAAAAAM7Z7zAjQTOCjUiPBtdo2do6lSsc'; // Hardcoded to bypass Render env issues
+    // const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captchaToken}`;
+    // 
+    // const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
+    // const verifyData = await verifyResponse.json();
+    // 
+    // if (!verifyData.success) {
+    //   res.status(400);
+    //   throw new Error('reCAPTCHA verification failed. Please try again.');
+    // }
 
     const userExists = await User.findOne({ email });
     if (userExists) {
