@@ -87,7 +87,7 @@ const Signup = () => {
 
           <div className="flex justify-center w-full py-2">
             <ReCAPTCHA
-              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+              sitekey="6Le78w8tAAAAAGEZUrQyqPiNxbUm2Fitwh75Lxsp"
               onChange={(token) => setCaptchaToken(token)}
             />
           </div>
