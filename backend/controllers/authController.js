@@ -14,7 +14,7 @@ const signup = async (req, res, next) => {
       throw new Error('Please complete the reCAPTCHA verification');
     }
 
-    const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+    const secretKey = '6Le78w8tAAAAAM7Z7zAjQTOCjUiPBtdo2do6lSsc'; // Hardcoded to bypass Render env issues
     const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${captchaToken}`;
     
     const verifyResponse = await fetch(verifyUrl, { method: 'POST' });
