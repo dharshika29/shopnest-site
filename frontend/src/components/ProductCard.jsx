@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
   // Need to adjust image URL since it's hosted on backend
   const imageUrl = product.image.startsWith('http') 
     ? product.image 
-    : `http://localhost:5000${product.image}`;
+    : `https://shopnest-site.onrender.com${product.image}`;
 
   return (
     <div className="premium-card group flex flex-col h-full overflow-hidden">

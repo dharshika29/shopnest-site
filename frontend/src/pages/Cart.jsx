@@ -46,7 +46,7 @@ const Cart = () => {
               {cart.map((item) => {
                 const imageUrl = item.product.image.startsWith('http') 
                   ? item.product.image 
-                  : `http://localhost:5000${item.product.image}`;
+                  : `https://shopnest-site.onrender.com${item.product.image}`;
                 
                 return (
                   <li key={item.product._id} className="p-6 flex flex-col sm:flex-row gap-6 items-center">

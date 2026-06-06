@@ -44,7 +44,7 @@ const Wishlist = () => {
         {wishlist.map((product) => {
           const imageUrl = product.image.startsWith('http') 
             ? product.image 
-            : `http://localhost:5000${product.image}`;
+            : `https://shopnest-site.onrender.com${product.image}`;
 
           return (
             <div key={product._id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col">

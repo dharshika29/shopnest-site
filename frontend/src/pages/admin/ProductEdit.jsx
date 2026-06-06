@@ -83,7 +83,7 @@ const ProductEdit = () => {
 
   const imageUrl = image.startsWith('http') || image.startsWith('data:') 
     ? image 
-    : `http://localhost:5000${image}`;
+    : `https://shopnest-site.onrender.com${image}`;
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

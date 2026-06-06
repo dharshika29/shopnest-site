@@ -46,7 +46,7 @@ const Profile = () => {
   };
 
   const profilePicUrl = user?.profilePic 
-    ? (user.profilePic.startsWith('http') ? user.profilePic : `http://localhost:5000${user.profilePic}`)
+    ? (user.profilePic.startsWith('http') ? user.profilePic : `https://shopnest-site.onrender.com${user.profilePic}`)
     : 'https://ui-avatars.com/api/?name=' + encodeURIComponent(user?.name || 'User') + '&background=random';
 
   return (

@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     if (user) {
       // Connect to Socket.IO server
-      const newSocket = io('http://localhost:5000');
+      const newSocket = io('https://shopnest-site.onrender.com');
       setSocket(newSocket);
 
       // Tell server we are online

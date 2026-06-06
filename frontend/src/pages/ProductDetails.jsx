@@ -65,7 +65,7 @@ const ProductDetails = () => {
 
   const imageUrl = product.image.startsWith('http') 
     ? product.image 
-    : `http://localhost:5000${product.image}`;
+    : `https://shopnest-site.onrender.com${product.image}`;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -71,7 +71,7 @@ const Navbar = () => {
                 <div className="relative group cursor-pointer flex items-center gap-2">
                   <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm ring-2 ring-transparent group-hover:ring-slate-200 transition-all duration-300">
                     <img 
-                      src={user.profilePic ? (user.profilePic.startsWith('http') ? user.profilePic : `http://localhost:5000${user.profilePic}`) : "https://ui-avatars.com/api/?name=" + user.name + "&background=0D8ABC&color=fff"} 
+                      src={user.profilePic ? (user.profilePic.startsWith('http') ? user.profilePic : `https://shopnest-site.onrender.com${user.profilePic}`) : "https://ui-avatars.com/api/?name=" + user.name + "&background=0D8ABC&color=fff"} 
                       alt="Profile" 
                       className="w-full h-full object-cover"
                     />

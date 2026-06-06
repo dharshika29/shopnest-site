@@ -104,7 +104,7 @@ const Orders = () => {
                 {order.products.map((item, index) => {
                   const imageUrl = item.product.image.startsWith('http') 
                     ? item.product.image 
-                    : `http://localhost:5000${item.product.image}`;
+                    : `https://shopnest-site.onrender.com${item.product.image}`;
                     
                   return (
                     <li key={index} className="py-4 flex gap-6 items-center first:pt-0 last:pb-0">
