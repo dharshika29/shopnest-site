@@ -14,8 +14,8 @@ const createRazorpayOrder = async (req, res, next) => {
     }
 
     const instance = new Razorpay({
-      key_id: 'rzp_test_SyEGyGvB1w34O2', // Hardcoded
-      key_secret: 'P1SLs1QB14Qkr0Dlot5P7lu', // Hardcoded
+      key_id: 'rzp_test_Sz16HmoeT1G4ta', // Hardcoded
+      key_secret: 'fWFtrZbjXCg4am7OfEtuhcuJ', // Hardcoded
     });
 
     const options = {
