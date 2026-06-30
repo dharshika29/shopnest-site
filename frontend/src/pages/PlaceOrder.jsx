@@ -95,7 +95,7 @@ const PlaceOrder = () => {
         });
 
         const options = {
-          key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_SyEGyGvB1w34O2', // Use env with valid fallback
+          key: 'rzp_test_Sz16HmoeT1G4ta',
           amount: orderData.amount,
           currency: orderData.currency,
           name: 'ShopNest',
