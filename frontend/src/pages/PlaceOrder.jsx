@@ -124,6 +124,7 @@ const PlaceOrder = () => {
                 emailPreviewUrl = data.previewUrl;
               }
 
+              alert("Order placed successfully! 🎉");
               clearCart();
               navigate('/orders', { state: { emailPreviewUrl } });
             } catch (err) {
@@ -165,6 +166,7 @@ const PlaceOrder = () => {
         emailPreviewUrl = data.previewUrl;
       }
 
+      alert("Order placed successfully! 🎉");
       clearCart();
       navigate('/orders', { state: { emailPreviewUrl } });
     } catch (error) {
