@@ -12,6 +12,9 @@ const sendEmail = async (options) => {
           user: process.env.SMTP_USER,
           pass: process.env.SMTP_PASS,
         },
+        connectionTimeout: 5000,
+        greetingTimeout: 5000,
+        socketTimeout: 5000,
       });
     } else {
       let testAccount = await nodemailer.createTestAccount();

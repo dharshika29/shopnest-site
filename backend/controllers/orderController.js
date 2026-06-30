@@ -117,7 +117,8 @@ const addOrderItems = async (req, res, next) => {
         <p>Regards,<br/>ShopNest Team</p>
       `;
 
-      const previewUrl = await sendEmail({
+      // Send Email Notification in the background (fire and forget)
+      sendEmail({
         email: user.email,
         subject: 'Order Confirmation & Invoice - ShopNest',
         html: emailHtml,
@@ -128,9 +129,9 @@ const addOrderItems = async (req, res, next) => {
             contentType: 'application/pdf'
           }
         ]
-      });
+      }).catch(err => console.error('Background email failed:', err));
 
-      res.status(201).json({ order: createdOrder, previewUrl });
+      res.status(201).json({ order: createdOrder, previewUrl: null });
     }
   } catch (error) {
     next(error);
