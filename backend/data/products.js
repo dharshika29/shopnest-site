@@ -1,7 +1,7 @@
 const products = [
   {
     title: 'AirPods Wireless Bluetooth Headphones',
-    image: 'https://images.unsplash.com/photo-1606220588913-b3aec4b7245d?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1588423771073-b8903fbb85b5?auto=format&fit=crop&q=80&w=800',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly. High-quality AAC audio offers immersive listening experience. Built-in microphone allows you to take calls while working.',
     category: 'Electronics',
@@ -28,7 +28,7 @@ const products = [
   },
   {
     title: 'Sony Playstation 5',
-    image: 'https://images.unsplash.com/photo-1606813907291-d86efa9b90cd?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1607459734139-3ee2ce3e8cb9?auto=format&fit=crop&q=80&w=800',
     description:
       'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
     category: 'Electronics',
@@ -37,7 +37,7 @@ const products = [
   },
   {
     title: 'Logitech G-Series Gaming Mouse',
-    image: 'https://images.unsplash.com/photo-1527814050087-379381547339?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=800',
     description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     category: 'Electronics',
@@ -46,7 +46,7 @@ const products = [
   },
   {
     title: 'Amazon Echo Dot 3rd Generation',
-    image: 'https://images.unsplash.com/photo-1543126623-33fb37ffc26a?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1568910748155-01ca989ddcb6?auto=format&fit=crop&q=80&w=800',
     description:
       'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
     category: 'Electronics',
